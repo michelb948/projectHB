@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Equipamentos</title>
+    <link rel="stylesheet" href="style.css"> <!-- Incluindo o CSS -->
+</head>
+<body>
+
+    <div class="container">
+        <h1>Reserva de Equipamentos</h1>
+
+        <!-- Formulário para a reserva -->
+        <form id="formReserva">
+            <label for="equipamento">Equipamento:</label>
+            <select id="equipamento" name="equipamento">
+                <option value="1">Projetor</option>
+                <option value="2">Roteador</option>
+                <!-- Adicione mais opções conforme necessário -->
+            </select>
+
+            <label for="data">Data da Reserva:</label>
+            <input type="date" id="data" name="data">
+
+            <label for="aula">Aula:</label>
+            <input type="text" id="aula" name="aula">
+
+            <label for="professor">Professor:</label>
+            <input type="text" id="professor" name="professor">
+
+            <button type="submit">Reservar</button>
+        </form>
+
+        <!-- Mensagem de status -->
+        <div id="statusReserva"></div>
+    </div>
+
+    <script src="script.js"></script> <!-- Inclusão do JS para lógica -->
+</body>
+</html>
